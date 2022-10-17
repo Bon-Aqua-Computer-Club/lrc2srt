@@ -1,0 +1,19 @@
+<html><head></head>
+  <body>
+    <h1>LRC</h1>
+    <textarea id="lrc" name="lrcbox" rows="20" cols="50"></textarea>
+    <button id="submitbtn">Submit</button>
+    <h1>SRT</h1>
+    <textarea id="srt" name="srtbox" rows="40" cols="80"></textarea>
+    <script src="bundle.js"></script>
+    <script>
+      console.log(lrc2sub)
+
+      document.getElementById('submitbtn').onclick = () => {
+        console.log('yo')
+        console.log(document.getElementById('submitbtn').value)
+        document.getElementById('srt').value = lrc2sub(document.getElementById('lrc').value)
+      }
+    </script>
+  </body>
+</html>
